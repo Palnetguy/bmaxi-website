@@ -1,10 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./index.css";
+import HomePage from "./pages/home_page";
+// import "./assets"
 
 function App() {
   return (
     <div className="App">
-      <h1>Bmaxi</h1>
+      <HomePage />
     </div>
   );
 }
