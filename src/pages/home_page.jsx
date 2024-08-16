@@ -32,6 +32,13 @@ import emailIco from "../assets/images/email.svg";
 import callIco from "../assets/images/call.svg";
 import { useState } from "react";
 
+import fbLogo from "../assets/images/Group 60.svg";
+import linkedinLogo from "../assets/images/Group 59.svg";
+import instaLogo from "../assets/images/Group 61.svg";
+import twiterLogo from "../assets/images/Group 63.svg";
+import whtapplogo from "../assets/images/Group 62.svg";
+import backupLogo from "../assets/images/Subtract.svg";
+
 const HomePage = () => {
   return (
     <div className="home_page">
@@ -247,7 +254,7 @@ const GetInTouch = () => {
             <input type="text" placeholder="First Name" />
             <input type="text" placeholder="Email" />
             <input type="text" placeholder="Phone number" />
-            <textarea type="text" placeholder="First Name"></textarea>
+            <textarea type="text" placeholder="Message"></textarea>
             <button>Send</button>
           </form>
         </div>
@@ -260,13 +267,25 @@ const GetInTouch = () => {
       <div className="contact_links">
         <span></span>
         <div className="links">
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
-          <div className="link"></div>
+          <div className="link">
+            <img src={fbLogo} alt="" />
+          </div>
+          <div className="link">
+            <img src={linkedinLogo} alt="" />
+          </div>
+          <div className="link">
+            <img src={instaLogo} alt="" />
+          </div>
+          <div className="link">
+            <img src={twiterLogo} alt="" />
+          </div>
+          <div className="link">
+            <img src={whtapplogo} alt="" />
+          </div>
         </div>
-        <div className="up_btn"></div>
+        <div className="up_btn">
+          <img src={backupLogo} alt="" />
+        </div>
       </div>
     </div>
   );
